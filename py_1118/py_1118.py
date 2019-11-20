@@ -5,11 +5,11 @@
 #spaces=0
 
 #for c in statement:
-#   if c.isalpha():
+#   if c.isalpha(): #isalpha함수 사용해서 알파벳 개수 확인
 #      alphas=alphas+1
-#   if c.isdigit:
+#   if c.isdigit(): #isdigit함수 사용해서 숫자 개수 확인
 #      digits=digits+1
-#   if c.isspace():
+#   if c.isspace(): #isspace함수 사용해서 공백 개수 확인
 #      spaces=spaces+1
 #print("알파벳 문자의 개수=",alphas)
 #print("숫자 문자의 개수=",digits)
@@ -18,11 +18,11 @@
 #def get_sum(start, end): #1부터10까지 함수
 #   sum=0
 #   for i in range(start, end+1):
-#      sum+=i
-#   return sum
+#      sum+=i #sum에 start~end+1을 더함
+#   return sum #sum반환
 
-#value = get_sum(1,10)
-#print(value)
+#value = get_sum(1,10) #start값을 1로, end+1값을 10으로 지정
+#print(value) #결과값출력(55)
 
 
 #def get_sum(start, end): #함수
@@ -34,32 +34,9 @@
 #value = get_sum(1,10)
 #print(value)
 
-#def asterisk_test(a,b,*num): #가변 인수
-#   return a+b+sum(num)
+#def asterisk_test(a,b,*args):
+#    return a+b+sum(args)
 
-#print(asterisk_test(1,2,3,4,5))
+#print(asterisk_test(1,2,3,4,5)) #안의 수들의 합 출력
 
-
-
-
-#def get_sum(start,end):
-#    sum=0
-#    for i in range(start,end+1):
-#        sum+=i
-#    return sum
-#value=get_sum(1,10)
-#print(value)
-
-#def get_sum(start,end):
-#    sum=0
-#    for i in range(start,end+1):
-#        sum+=1
-        #return sum
-#value=get_sum(1,10)
-
-def asterisk_test(a,b,*args):
-    return a+b+sum(args)
-
-print(asterisk_test(1,2,3,4,5))
-
-#참조에 의한 호출, 값에 의한 호출
+#참조에 의한 호출, 값에 의한 호출 알아두기
